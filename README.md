@@ -13,7 +13,7 @@
 Install `pnuopt` using pip:
 
 ```bash
-pip install pnuopt
+pip install git+https://github.com/kaper-edward/pnuopt.git
 ```
 
 ## Usage
