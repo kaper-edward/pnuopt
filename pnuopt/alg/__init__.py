@@ -4,3 +4,7 @@ from .hc.hill_climbing import FirstChoiceHillClimber
 from .hc.hill_climbing import StochasticHillClimber
 from .hc.hill_climbing import GradientDescentHillClimber
 from .hc.hill_climbing import SimulatedAnnealingHillClimber
+from .ga.genetic_algorithm import GeneticAlgorithm
+from .reg.regression import UnivariateLinearRegression
+from .reg.regression import MultivariateLinearRegression
+from .reg.regression import MultivariateLinearRegressionWithGradientDescent
