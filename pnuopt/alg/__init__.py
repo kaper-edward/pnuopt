@@ -8,3 +8,5 @@ from .ga.genetic_algorithm import GeneticAlgorithm
 from .reg.regression import UnivariateLinearRegression
 from .reg.regression import MultivariateLinearRegression
 from .reg.regression import MultivariateLinearRegressionWithGradientDescent
+from .reg.regression import KNNRegressor
+from .cls.classification import KNNClassifier

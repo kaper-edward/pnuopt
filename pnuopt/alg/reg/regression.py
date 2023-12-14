@@ -57,3 +57,24 @@ class MultivariateLinearRegressionWithGradientDescent:
   def predict(self, X):
     return np.dot(X, self.weights) + self.bias
 
+
+class KNNRegressor:
+  def __init__(self, k=3):
+    self.k = k
+    self.X_train = None
+    self.y_train = None
+
+  def fit(self, X, y):
+    self.X_train = X
+    self.y_train = y
+
+  def predict(self, X):
+    predictions = []
+    for x in X:
+      distances = np.sqrt(np.sum((self.X_train - x) ** 2, axis=1))
+      k_indices = np.argsort(distances)[:self.k]
+      k_nearest_labels = self.y_train[k_indices]
+      prediction = np.mean(k_nearest_labels)
+      predictions.append(prediction)
+
+    return np.array(predictions)

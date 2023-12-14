@@ -1,10 +1,12 @@
-import unittest
 from functools import partial
+import unittest
 
 import numpy as np
 
-from pnuopt.alg import FirstChoiceHillClimber, SteepestAscentHillClimber, \
-    GradientDescentHillClimber, SimulatedAnnealingHillClimber
+from pnuopt.alg import (FirstChoiceHillClimber,
+                        SteepestAscentHillClimber,
+                        GradientDescentHillClimber,
+                        SimulatedAnnealingHillClimber)
 
 
 class TestContinuousHillClimber(unittest.TestCase):

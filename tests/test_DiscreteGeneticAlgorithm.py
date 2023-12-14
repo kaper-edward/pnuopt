@@ -1,9 +1,11 @@
+from collections import Counter
 from functools import partial
-import numpy as np
 import random
 import unittest
+
+import numpy as np
+
 from pnuopt.alg import GeneticAlgorithm
-from collections import Counter
 
 
 class TestGeneticAlgorithm(unittest.TestCase):

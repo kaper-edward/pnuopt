@@ -10,7 +10,9 @@ setup(
     license='LICENSE.txt',
     description='An optimization package',
     long_description=open('README.md').read(),
+    python_requires='>3.10',
     install_requires=[
-        "numpy >= 1.15",
+        "numpy >= 1.20",
+        "scikit-learn >= 1.2.0",
     ],
 )
